@@ -3,6 +3,7 @@
 // 30-Jun, 2022
 import * as React from "react";
 import styled from "styled-components";
+import { addToFigma, getSVG } from "./helpers";
 
 interface ImgGridProps {
   name: string;
@@ -21,8 +22,9 @@ function ImgGrid({
   imgRef,
   canRef,
 }: ImgGridProps) {
+  const url = "https://illlustrations-api.netlify.app/v1/vault.svg";
   return (
-    <Button key={name} onClick={() => {}}>
+    <Button key={name} onClick={() => addToFigma(url)}>
       <img src="https://illlustrations-api.netlify.app/v1/vault.svg" />
     </Button>
   );

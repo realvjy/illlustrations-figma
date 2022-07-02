@@ -10,13 +10,20 @@ figma.showUI(__html__, {
 
 console.log('illlustrations running...');
 
+
 //  Message received
 figma.ui.onmessage = (msg) => {
   
-    if (msg.type === 'notify') {
+    if (msg.svg === 'notify') {
       figma.notify(msg.data.message);
       return;
     }
+    console.log(msg);
+    const icon = figma.createNodeFromSvg(msg.svg)
+    icon.name = 'test'
+    icon.x = figma.viewport.center.x
+    icon.y = figma.viewport.center.y
+    figma.currentPage.selection = [icon]
 
   }
   

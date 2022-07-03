@@ -1,25 +1,10 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import "./ui.css";
-// import {HelloTest, Toface}  from "./components/hello-test";
 import Home from "./views/home";
-
-declare function require(path: string): any;
 
 const App = () => {
   const [currentPage] = React.useState("home");
-
-  function onWindowResize(windowSize: { width: number; height: number }) {
-    parent.postMessage(
-      {
-        pluginMessage: {
-          type: "window-resize",
-          data: { width: windowSize.width, height: windowSize.height },
-        },
-      },
-      "*"
-    );
-  }
 
   const renderPage = () => {
     switch (currentPage) {

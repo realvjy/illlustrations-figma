@@ -3,7 +3,16 @@
 // 30-Jun, 2022
 import * as React from "react";
 import styled from "styled-components";
-import { addToFigma, getSVG } from "./helpers";
+
+const getSVG = async (url) => {
+  try {
+    let response = await fetch(url);
+    let svgText = await response.text();
+    return svgText;
+  } catch (error) {
+    console.log("error", error);
+  }
+};
 
 interface ImgGridProps {
   name: string;
@@ -22,10 +31,25 @@ function ImgGrid({
   imgRef,
   canRef,
 }: ImgGridProps) {
-  const url = "https://illlustrations-api.netlify.app/v1/vault.svg";
+  const url = `https://illlustrations-api.netlify.app/v1/${name}.svg`;
+
+  const addToFigma = async () => {
+    const svgData = await getSVG(url);
+    //@ts-ignore
+    parent.postMessage(
+      {
+        pluginMessage: {
+          svg: svgData,
+          name: name,
+        },
+      },
+      "*"
+    );
+  };
+
   return (
-    <Button key={name} onClick={() => addToFigma(url)}>
-      <img src="https://illlustrations-api.netlify.app/v1/vault.svg" />
+    <Button key={name} onClick={() => addToFigma()}>
+      <img src={`${url}`} />
     </Button>
   );
 }
@@ -39,16 +63,17 @@ const Button = styled.button`
   background: var(--figma-color-bg-secondary);
   border: 0;
   box-shadow: none;
-  border-radius: 8px;
+  border-radius: 4px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  border: 0.5px solid var(--figma-color-border);
   outline: 0;
   :hover {
     border: 1px solid var(--figma-color-border-brand);
   }
   img {
     width: 100%;
-    border-radius: 6px;
+    border-radius: 4px;
   }
 `;

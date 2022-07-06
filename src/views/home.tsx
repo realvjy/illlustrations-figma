@@ -18,13 +18,11 @@ const Home = (props) => {
 
   const [results, setResults] = React.useState(svgs);
   const [query, setQuery] = React.useState("");
-  const canvasRef = React.useRef(null);
-  const imgRef = React.useRef(null);
 
   // Setup Fuse search
   const fuse = new Fuse(svgs, {
     threshold: 0.2,
-    keys: ["name", "keywords"],
+    keys: ["name", "keyword"],
   });
 
   // Check result from input text and return query
@@ -65,16 +63,10 @@ const Home = (props) => {
               name={icon.name}
               keyword={icon.keywords}
               key={`${icon.name}-${i}`}
-              color={"color"}
-              angle={"angle"}
-              imgRef={imgRef}
-              canRef={canvasRef}
             />
           );
         })}
       </Grid>
-      <canvas ref={canvasRef} style={{ display: "none" }} />
-      <img ref={imgRef} style={{ display: "none" }} />
 
       <Footer />
     </>

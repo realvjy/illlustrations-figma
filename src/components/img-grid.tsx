@@ -1,5 +1,4 @@
 // img-grid.tsx
-// Create view and setup canvas/image reference to add on figma canvas
 // 30-Jun, 2022
 import * as React from "react";
 import styled from "styled-components";
@@ -17,20 +16,9 @@ const getSVG = async (url) => {
 interface ImgGridProps {
   name: string;
   keyword: string;
-  color: string;
-  angle: string;
-  imgRef: any;
-  canRef: any;
 }
 
-function ImgGrid({
-  name,
-  keyword,
-  color,
-  angle,
-  imgRef,
-  canRef,
-}: ImgGridProps) {
+function ImgGrid({ name, keyword }: ImgGridProps) {
   const url = `https://illlustrations-api.netlify.app/v1/${name}.svg`;
 
   const addToFigma = async () => {

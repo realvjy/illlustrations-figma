@@ -17,8 +17,8 @@ figma.ui.onmessage = (msg) => {
   }
   const icon = figma.createNodeFromSvg(msg.svg);
   icon.name = msg.name;
-  icon.x = figma.viewport.center.x;
-  icon.y = figma.viewport.center.y;
+  icon.x = Math.round(figma.viewport.center.x - icon.width / 2);
+  icon.y = Math.round(figma.viewport.center.y - icon.height / 2);
   figma.currentPage.selection = [icon];
   figma.notify("✅  " + msg.name + " illlustration added");
 };

@@ -185,12 +185,16 @@ const illlustrations = {
       name: "app-development",
       keyword: [
         "App development",
-        "app developers",
+        "developers",
+        "computer",
+        "laptop",
+        "stationary",
+        "pencil",
         "apps",
         "mobile apps",
-        "iPhone apps",
-        "Android apps",
-        "Windows apps",
+        "iPhone",
+        "Android",
+        "Windows",
         "web apps",
         "app store",
       ],
@@ -262,14 +266,14 @@ const illlustrations = {
       name: "installing",
       keyword: [
         "installing",
-        "installation",
+        "programming",
         "installer",
         "install",
         "setup",
         "configure",
-        "configuring",
-        "configuration",
-        "configurations",
+        "WFH",
+        "laptop",
+        "computer",
       ],
     },
     {
@@ -299,6 +303,7 @@ const illlustrations = {
         "plough",
         "reap",
         "harvest",
+        "tree",
       ],
     },
     {
@@ -487,7 +492,15 @@ const illlustrations = {
     },
     {
       name: "vault",
-      keyword: ["secret", "hidden", "treasure", "robbery", "bank"],
+      keyword: [
+        "secret",
+        "hidden",
+        "treasure",
+        "robbery",
+        "bank",
+        "money",
+        "box",
+      ],
     },
     {
       name: "sport-bicycle",
@@ -547,7 +560,18 @@ const illlustrations = {
     },
     {
       name: "designer-tools",
-      keyword: ["drawing", "painting", "photoshop", "illustrator", "sketching"],
+      keyword: [
+        "drawing",
+        "painting",
+        "photoshop",
+        "illustrator",
+        "sketching",
+        "pen",
+        "coffee",
+        "cup",
+        "color",
+        "pantone",
+      ],
     },
     {
       name: "abacus",
@@ -559,7 +583,15 @@ const illlustrations = {
     },
     {
       name: "retro-cassette",
-      keyword: ["retro", "cassette", "music", "player", "vintage"],
+      keyword: [
+        "retro",
+        "cassette",
+        "music",
+        "player",
+        "vintage",
+        "audio",
+        "tape",
+      ],
     },
     {
       name: "walkie-talkie",
@@ -573,7 +605,7 @@ const illlustrations = {
     },
     {
       name: "healthy",
-      keyword: ["healthy", "diet", "nutrition", "exercise", "wellness"],
+      keyword: ["healthy", "diet", "nutrition", "exercise", "water", "lemon"],
     },
     {
       name: "workstation",
@@ -616,15 +648,34 @@ const illlustrations = {
         "design",
         "engineering",
         "materials",
+        "skyscrapper",
+        "city",
       ],
     },
     {
       name: "auntum",
-      keyword: ["fall", "season", "leaves", "pumpkin", "Thanksgiving"],
+      keyword: [
+        "fall",
+        "season",
+        "leaves",
+        "pumpkin",
+        "Thanksgiving",
+        "tree",
+        "bench",
+      ],
     },
     {
       name: "designer-tools-2",
-      keyword: ["tools", "designer", "art", "craft", "software"],
+      keyword: [
+        "tools",
+        "designer",
+        "art",
+        "craft",
+        "software",
+        "eraser",
+        "knife",
+        "scale",
+      ],
     },
     {
       name: "ice-cream",
@@ -640,7 +691,17 @@ const illlustrations = {
     },
     {
       name: "stationary-set-2",
-      keyword: ["stationary", "set", "office", "school", "desk"],
+      keyword: [
+        "stationary",
+        "set",
+        "office",
+        "school",
+        "desk",
+        "pin",
+        "clip",
+        "glue",
+        "scissor",
+      ],
     },
     {
       name: "santa",
@@ -776,7 +837,7 @@ const illlustrations = {
     },
     {
       name: "color-tool",
-      keyword: ["Color", "Tool", "Paint", "Shade", "Hue"],
+      keyword: ["Color", "Tool", "Paint", "Shade", "Hue", "brush", "marker"],
     },
     {
       name: "imac",
@@ -792,11 +853,18 @@ const illlustrations = {
     },
     {
       name: "designer-fav-tool-wacom",
-      keyword: ["Wacom", "Design", "Tool", "Favourite", "Designer"],
+      keyword: ["Wacom", "Design", "Tool", "Favourite", "Designer", "mouse"],
     },
     {
       name: "blackboard",
-      keyword: ["school", "classroom", "teacher", "students", "writing"],
+      keyword: [
+        "school",
+        "classroom",
+        "teacher",
+        "students",
+        "writing",
+        "paint",
+      ],
     },
     {
       name: "printer",
@@ -808,7 +876,7 @@ const illlustrations = {
     },
     {
       name: "stationary-set",
-      keyword: ["desk", "office", "chair", "supplies", "workspace"],
+      keyword: ["pin", "supplies", "workspace", "clip", "paperclip"],
     },
     {
       name: "angler-fish",
@@ -836,7 +904,7 @@ const illlustrations = {
     },
     {
       name: "burger",
-      keyword: ["fries", "pickles", "ketchup", "mayonnaise", "cheese"],
+      keyword: ["fries", "food", "ketchup", "mayonnaise", "cheese"],
     },
     {
       name: "day64followers",
@@ -850,7 +918,15 @@ const illlustrations = {
     },
     {
       name: "dotted-notebook",
-      keyword: ["notebook", "laptop", "computer", "technology", "electronics"],
+      keyword: [
+        "notebook",
+        "laptop",
+        "computer",
+        "paper",
+        "diary",
+        "journel",
+        "pen",
+      ],
     },
     {
       name: "firework",
@@ -864,7 +940,15 @@ const illlustrations = {
     },
     {
       name: "open-vault",
-      keyword: ["vault", "open", "security", " deposits", "privacy"],
+      keyword: [
+        "vault",
+        "open",
+        "security",
+        " deposits",
+        "privacy",
+        "money",
+        "box",
+      ],
     },
     {
       name: "coding",
@@ -875,11 +959,21 @@ const illlustrations = {
         "software",
         "developer",
         "WFH",
+        "computer",
+        "laptop",
       ],
     },
     {
       name: "ui-ux",
-      keyword: ["user interface", "user experience", "design", "ux", "ui"],
+      keyword: [
+        "user interface",
+        "user experience",
+        "design",
+        "ux",
+        "ui",
+        "computer",
+        "laptop",
+      ],
     },
     {
       name: "eiffel-tower",
@@ -912,7 +1006,7 @@ const illlustrations = {
     },
     {
       name: "forehead-temprature-tester",
-      keyword: ["sick", "covid", "ill"],
+      keyword: ["sick", "covid", "ill", "doctor"],
     },
     {
       name: "namaste-no-hand-shake",
@@ -920,15 +1014,15 @@ const illlustrations = {
     },
     {
       name: "sanitizer",
-      keyword: ["wfh", "covid", "clean"],
+      keyword: ["wfh", "covid", "clean", "doctor"],
     },
     {
       name: "sick-sneezing",
-      keyword: ["covid", "ill", "face"],
+      keyword: ["covid", "ill", "face", "girl"],
     },
     {
       name: "temprature",
-      keyword: ["wfh", "covid", "sick", "tool"],
+      keyword: ["wfh", "covid", "sick", "tool", "doctor"],
     },
     {
       name: "wash-hand",
@@ -940,11 +1034,20 @@ const illlustrations = {
     },
     {
       name: "work-from-home-video-chat",
-      keyword: ["wfh", "covid", "work", "call", "zoom", "meet", "office"],
+      keyword: [
+        "wfh",
+        "covid",
+        "work",
+        "call",
+        "zoom",
+        "meet",
+        "office",
+        "laptop",
+      ],
     },
     {
       name: "work-from-home",
-      keyword: ["wfh", "covid", "work", "office"],
+      keyword: ["wfh", "covid", "work", "office", "laptop", "call", "computer"],
     },
   ],
 };

@@ -12,9 +12,32 @@ import Footer from "../components/footer";
 
 declare function require(path: string): any;
 
+// Shuffle arrary
+export const shuffle = (array) => {
+  var currentIndex = array.length;
+  var tempValue = 0;
+  var randomIndex = 0;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    tempValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = tempValue;
+  }
+
+  return array;
+};
+
 const Home = (props) => {
   // const imageData = props;
   const { name } = props;
+
+  shuffle(svgs); //randomize svgs :)
 
   const [results, setResults] = React.useState(svgs);
   const [query, setQuery] = React.useState("");

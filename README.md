@@ -1,13 +1,13 @@
-[![3dicons-figma](/preview.png)](https://www.figma.com/community/plugin/1107546399747513238/3dicons)
+[![illlustration-figma](/preview.png)](https://www.figma.com/community/plugin/1107546399747513238/3dicons)
 
-# 3dicons Figma plugin
+# illlustrations Figma plugin
 
-Use 1400+ [3dicons](https://3dicons.co) within Figma or Figjam files quickly. The icons can be searched and filtered by color and angle.
+Now you can insert all 120+ illustrations from the [illlustraions.co](https://illlustrations.co) open-source library, directly in your Figma and FigJam files as SVG/Vector. You can also change the color and shape after inserting because it's a svg.
 
 ## Figma Community
 
 Grab community file from [Figma Community](https://www.figma.com/community/plugin/1107546399747513238/3dicons)
-👉 here
+👉 Soon
 
 ## Local development
 

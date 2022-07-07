@@ -1,4 +1,4 @@
-[![illlustration-figma](/src/preview.png)](https://www.figma.com/community/plugin/1107546399747513238/3dicons)
+[![illlustration-figma](/src/preview.png)](https://www.figma.com/community/plugin/1124370159336948073/illlustrations)
 
 # illlustrations Figma plugin
 
@@ -6,7 +6,7 @@ Now you can insert all 120+ illustrations from the [illlustraions.co](https://il
 
 ## Figma Community
 
-Grab community file from [Figma Community](https://www.figma.com/community/plugin/1107546399747513238/3dicons)
+Grab community file from [Figma Community](https://www.figma.com/community/plugin/1124370159336948073/illlustrations)
 👉 Soon
 
 ## Local development
@@ -16,7 +16,7 @@ Plugin is opensource. You are welcome to contribute.
 1. Clone the repository
 
    ```shell
-   git clone
+   git clone ...
    cd illlustrations-figma
    ```
 

@@ -7,7 +7,7 @@ const Footer = () => {
     <FooterWrapper>
       <FooterCredit>
         <div className="left-icon">
-          <a href="https://illlustrations.co" target="_blank">
+          <a href="https://illlustrations.co?ref=fig-plugin" target="_blank">
             <Logo width={80} height={16} />
           </a>
           <span>v1.0</span>

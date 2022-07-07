@@ -829,7 +829,14 @@ const illlustrations = {
     },
     {
       name: "day66travel",
-      keyword: ["vacation", "destination", "trip", "explore", "adventure"],
+      keyword: [
+        "vacation",
+        "destination",
+        "trip",
+        "explore",
+        "adventure",
+        "car",
+      ],
     },
     {
       name: "kitchen",
@@ -896,7 +903,7 @@ const illlustrations = {
     },
     {
       name: "day65city-road",
-      keyword: ["city", "road", "travel", "commute", "traffic"],
+      keyword: ["city", "road", "travel", "commute", "traffic", "car"],
     },
     {
       name: "travel-bag",
@@ -1043,6 +1050,7 @@ const illlustrations = {
         "meet",
         "office",
         "laptop",
+        "girl",
       ],
     },
     {

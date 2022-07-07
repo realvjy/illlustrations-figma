@@ -20,6 +20,13 @@ interface ImgGridProps {
 
 function ImgGrid({ name, keyword }: ImgGridProps) {
   const url = `https://illlustrations-api.netlify.app/v1/${name}.svg`;
+  const placeholder = `https://illlustrations-api.netlify.app/placeholder.png`;
+
+  const [imageSrc, setImageSrc] = React.useState(placeholder);
+
+  function loadImage() {
+    setImageSrc(url);
+  }
 
   const addToFigma = async () => {
     const svgData = await getSVG(url);
@@ -37,7 +44,7 @@ function ImgGrid({ name, keyword }: ImgGridProps) {
 
   return (
     <Button key={name} onClick={() => addToFigma()}>
-      <img src={`${url}`} />
+      <img src={imageSrc} onLoad={loadImage} />
     </Button>
   );
 }
@@ -51,7 +58,7 @@ const Button = styled.button`
   background: var(--figma-color-bg-secondary);
   border: 0;
   box-shadow: none;
-  border-radius: 4px;
+  border-radius: 6px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -63,5 +70,6 @@ const Button = styled.button`
   img {
     width: 100%;
     border-radius: 4px;
+    min-height: 100px;
   }
 `;

@@ -1,4 +1,4 @@
-[![illlustration-figma](/preview.png)](https://www.figma.com/community/plugin/1107546399747513238/3dicons)
+[![illlustration-figma](/src/preview.png)](https://www.figma.com/community/plugin/1107546399747513238/3dicons)
 
 # illlustrations Figma plugin
 
@@ -38,4 +38,4 @@ Plugin is opensource. You are welcome to contribute.
 
 1. Choose `illlustrations-plugin/manifest.json`
 
-1. Run the plugin by going to `Menu > Plugins > Development > 3dicons`
+1. Run the plugin by going to `Menu > Plugins > Development > illlustrations`

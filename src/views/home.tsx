@@ -9,6 +9,7 @@ import Fuse from "fuse.js";
 import { SearchIcon } from "../components/icons";
 import ImgGrid from "../components/img-grid";
 import Footer from "../components/footer";
+import Loading from "../loading";
 
 declare function require(path: string): any;
 
@@ -34,6 +35,8 @@ export const shuffle = (array) => {
 };
 
 const Home = (props) => {
+  const [counter, setCounter] = React.useState(0);
+
   // const imageData = props;
   const { name } = props;
 
@@ -78,7 +81,7 @@ const Home = (props) => {
           key={name}
         />
       </SearchBox>
-
+      {results.length !== counter && <Loading />}
       <Grid>
         {results.map((icon, i) => {
           return (
@@ -86,11 +89,13 @@ const Home = (props) => {
               name={icon.name}
               keyword={icon.keywords}
               key={`${icon.name}-${i}`}
+              onLoad={() => {
+                setCounter(counter + 1);
+              }}
             />
           );
         })}
       </Grid>
-
       <Footer />
     </>
   );

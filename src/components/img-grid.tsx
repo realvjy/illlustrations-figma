@@ -16,17 +16,11 @@ const getSVG = async (url) => {
 interface ImgGridProps {
   name: string;
   keyword: string;
+  onLoad: Function;
 }
 
-function ImgGrid({ name, keyword }: ImgGridProps) {
+function ImgGrid({ name, keyword, onLoad }: ImgGridProps) {
   const url = `https://illlustrations-api.netlify.app/v1/${name}.svg`;
-  const placeholder = `https://illlustrations-api.netlify.app/placeholder.png`;
-
-  const [imageSrc, setImageSrc] = React.useState(placeholder);
-
-  function loadImage() {
-    setImageSrc(url);
-  }
 
   const addToFigma = async () => {
     const svgData = await getSVG(url);
@@ -44,7 +38,12 @@ function ImgGrid({ name, keyword }: ImgGridProps) {
 
   return (
     <Button key={name} onClick={() => addToFigma()}>
-      <img src={imageSrc} onLoad={loadImage} />
+      <img
+        src={url}
+        onLoad={() => {
+          onLoad();
+        }}
+      />
     </Button>
   );
 }

@@ -90,7 +90,6 @@ const Home = (props) => {
           );
         })}
       </Grid>
-
       <Footer />
     </>
   );

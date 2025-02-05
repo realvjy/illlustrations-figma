@@ -6,6 +6,12 @@
   "ui": "dist/ui.html",
   "editorType": [
     "figma",
-    "figjam"
-  ]
+    "figjam",
+    "slides"
+  ],
+  "networkAccess": {
+    "allowedDomains": [
+      "https://illlustrations-api.netlify.app/"
+    ]
+  }
 }
